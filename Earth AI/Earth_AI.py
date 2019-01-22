@@ -4,8 +4,8 @@ import math
 
 # Reading in four numerical inputs: lat_min, lat_max, long_min, long_max and labels("Analysis_area")
 # Note the function currently uses a local directory
-directory = r'C:\Users\adesi\Downloads\AU_proj_coords.csv'
-data_frame = pd.read_csv('AU_proj_coords.csv', sep=',',
+filename = 'AU_proj_coords.csv'
+data_frame = pd.read_csv(filename, sep=',',
                          usecols=['MIN_longitude', 'MAX_longitude', 'MIN_latitude', 'MAX_latitude', 'analysis_area'])
 # print(data_frame.head(4))
 
