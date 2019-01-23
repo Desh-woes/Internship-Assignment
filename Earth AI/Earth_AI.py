@@ -19,7 +19,7 @@ def print_area():
 
         # Area formula.
         area = (math.pi / 180) * (pow(r, 2)) * (
-            abs(math.sin(abs(data_frame['MAX_latitude'][x])) - math.sin(abs(data_frame['MIN_latitude'][x])))) * (
+            abs(math.sin(math.radians(abs(data_frame['MAX_latitude'][x]))) - math.sin(math.radians(abs(data_frame['MIN_latitude'][x]))))) * (
                    abs(data_frame['MAX_longitude'][x] - data_frame['MIN_longitude'][x]))
 
         # Print
